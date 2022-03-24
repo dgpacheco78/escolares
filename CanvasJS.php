@@ -1,9 +1,10 @@
 <?php
 	$periodo = "Septiembre - Diciembre 2020";
 
-	$conn = new mysqli("localhost:3307", "root", "dasnivdra", "desercionPcausa");
+	
+	$conn = new mysqli("localhost", "root", "1234", "desercionpcausa");
+  //$conn = new mysqli("localhost:3307", "root", "dasnivdra", "desercionPcausa");
 	$conn->set_charset("utf8");
-
 	$sql1 = "SELECT * FROM desercion WHERE periodo = '".$periodo."' AND carrera = 'dsm'";
 	$result1 = $conn->query($sql1);
     $row1 = $result1->fetch_array();
