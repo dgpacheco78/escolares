@@ -2,7 +2,8 @@
   $conn = new mysqli("localhost", "root", "1234", "desercionpcausa");
   //$conn = new mysqli("localhost:3307", "root", "dasnivdra", "desercionPcausa");
 	$conn->set_charset("utf8");
-    $sql1 = "SELECT fechaVenta, montoVenta FROM ventastemp";
+    $sql1 = "SELECT fechaVenta, montoVenta FROM ventastemp"; //consulta desde la tabla ventastemp
+   // $sql1 = "SELECT fechaVenta, montoVenta FROM ventastemp"; // consulta desde la tabla 
 	$result1 = $conn->query($sql1);
     $valoresY=array();
     $valoresX=array();

@@ -15,6 +15,24 @@
     <div class="container">
         <div class="row">
             <div class="panel panel-primary">
+                <div class="panel panel-heading">graficas de prueba </div>
+                <div class="panel panel-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div id="cargaLineal"></div>
+                        </div>
+                        <div class="col-sm-6">
+                        <div id="cargaBarras"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
                 <div class="panel panel-heading">graficas de prueba sistema de Escolares</div>
                 <div class="panel panel-body">
                     <div class="row">
