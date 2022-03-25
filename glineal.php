@@ -4,8 +4,8 @@
 	$conn->set_charset("utf8");
     $sql1 = "SELECT fechaVenta, montoVenta FROM ventastemp order by fechaVenta";
 	$result1 = $conn->query($sql1);
-    $valoresY=array();
-    $valoresX=array();
+    $valoresY = array(); //montos
+    $valoresX = array();//fechas
 
     while ($ver=mysqli_fetch_row($result1)) {
        $valoresY[]=$ver[1];
@@ -16,14 +16,14 @@
     $datosY=json_encode($valoresY);
 ?>
 
-<div id = "graficalineal"></div>
+<div id = "cargaLineal"></div>
 
 <script type =  "text/javascript">
 
-function crearCadenaBarras(json) {
+function crearCadenaLineal(json) {
     var parsed = JSON.parse(json);
     var arr = [];
-for (var x in parsed) {
+for (var X in parsed) {
     arr.push(parsed[X]);
     
 }
@@ -48,5 +48,5 @@ type: 'scatter'
 var data = [trace1];
 
 
-Plotly.newPlot('graficalineal', data);
+Plotly.newPlot('cargaLineal', data);
 </script>

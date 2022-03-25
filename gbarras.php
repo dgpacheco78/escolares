@@ -21,7 +21,7 @@
 function crearCadenaBarras(json) {
     var parsed = JSON.parse(json);
     var arr = [];
-for (var x in parsed) {
+for (var X in parsed) {
     arr.push(parsed[X]);
     
 }
