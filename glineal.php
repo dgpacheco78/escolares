@@ -44,9 +44,28 @@ y: datosY,
 type: 'scatter'
 
 };
+var trace2 = {
 
-var data = [trace1];
+x: datosX,
+
+y: datosY,
+
+type: 'scatter'
+
+};
+var trace2 = {
+
+x: datosX,
+
+y: datosY,
+
+type: 'scatter'
+
+};
+
+var data = [trace1, trace2, trace3];
 
 
+Plotly.newPlot('cargaLineal', data);
 Plotly.newPlot('cargaLineal', data);
 </script>
